@@ -1,0 +1,10 @@
+streamlit==1.42.2
+# paddlepaddle==2.6.2
+paddleocr==2.9.1
+opencv-python==4.11.0.86
+requests==2.32.3
+Pillow==11.1.0
+PyMuPDF==1.25.3
+numpy==1.26.4
+
+# pip install paddlepaddle==0.0.0 -f https://www.paddlepaddle.org.cn/whl/mac/cpu/develop.html
