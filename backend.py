@@ -10,6 +10,7 @@ from paddleocr import PaddleOCR
 from PIL import Image
 import re
 import requests
+from dotenv import load_dotenv
 
 # Create directories for temporary files
 temp_dir = './temp_files'
@@ -25,8 +26,13 @@ os.makedirs(text_output_folder, exist_ok=True)
 json_output_folder = './temp_files/extracted_json'
 os.makedirs(json_output_folder, exist_ok=True)
 
-#Add in .env credentials
+# Load the .env file
+load_dotenv()
 
+# Access environment variables
+groq_api_url = os.getenv("GROQ_API_URL")
+groq_api_key = os.getenv("GROQ_API_KEY")
+model_name = os.getenv("MODEL_NAME")
 
 # Initialize PaddleOCR with structure mode enabled
 ocr = PaddleOCR(
