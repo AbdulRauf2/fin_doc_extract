@@ -12,7 +12,7 @@ A Streamlit application that extracts structured information from PDF documents 
   - Credit Card Statements
   - Telecom Bills
   - Utility Bills
-- **Structured Data Extraction**: Uses Groq LLM API to extract key fields in JSON format
+- **Structured Data Extraction**: Uses Groq LLM API to eact key fields in JSON format
 - **Clean UI**: Simple Streamlit interface for uploading and viewing results
 
 ## 📋 Requirements
@@ -29,8 +29,8 @@ A Streamlit application that extracts structured information from PDF documents 
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/pdf-document-analyzer.git
-cd pdf-document-analyzer
+git clone https://github.com/AbdulRauf2/fin_doc_extract.git
+cd fin_doc_extract
 ```
 
 2. Install required dependencies:
