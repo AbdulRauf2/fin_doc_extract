@@ -29,7 +29,7 @@ A Streamlit application that extracts structured information from PDF documents 
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/AbdulRauf2/fin_doc_extract.git
+git clone https://github.com/AbdulRauf2/fin_doc_extract
 cd fin_doc_extract
 ```
 
