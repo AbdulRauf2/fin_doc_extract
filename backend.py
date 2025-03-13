@@ -277,12 +277,12 @@ def call_groq_api(prompt):
     Sends a request to the Groq API and handles rate limits.
     """
     headers = {
-        "Authorization": f"Bearer {GROQ_API_KEY}",
+        "Authorization": f"Bearer {groq_api_key}",
         "Content-Type": "application/json"
     }
 
     payload = {
-        "model": MODEL_NAME,
+        "model": model_name,
         "messages": [
             {"role": "system", "content": "You are a document extraction assistant."},
             {"role": "user", "content": prompt}
@@ -293,7 +293,7 @@ def call_groq_api(prompt):
 
     # Retry logic in case of rate limits
     while True:
-        response = requests.post(GROQ_API_URL, headers=headers, json=payload)
+        response = requests.post(groq_api_url, headers=headers, json=payload)
 
         if response.status_code == 200:
             # Parse the response JSON and return the content
